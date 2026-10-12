@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: fusion-ai-bd
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        value: "7723488337"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: BKASH_NUMBER
+        value: "01608364088"
+      - key: ROCKET_NUMBER
+        value: "01608364088"
+      - key: BINANCE_PAY_ID
+        value: "1076189034"
+      - key: USDT_TRC20
+        value: "TKeEd3wuTqHse2rdzAg3rqYeRfQD1NC7tq"
+      - key: USDT_BSC20
+        value: "0xb83a03d9ded3ac7a4908aa87cfdfe1df9e05f719"
